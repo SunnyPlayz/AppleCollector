@@ -30,7 +30,7 @@ int xx = 225;
 int yx = 300;
 int wx = 150;
 int hx = 80;
-
+float version = 1.0;
 
 Basket basket = new Basket();
 ArrayList<Fruit> apples;

@@ -10,6 +10,7 @@ void setting() {
   fill(0);
   textSize(40);
   text("Settings", 230, 60);
+  text("Version "+ version, 180, 456);  
   textSize(20);
   text("Back to Menu", 235, 325);
   textSize(16);
@@ -29,6 +30,7 @@ void lsetting() {
   fill(255);
   textSize(40);
   text("Settings", 230, 60);
+  text("Version "+ version, 180, 456);  
   textSize(20);
   fill(0);
   text("Back to Menu", 235, 325);
