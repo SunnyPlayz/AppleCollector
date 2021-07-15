@@ -1,3 +1,10 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+import java.io.FileNotFoundException;
+
+String hs2;
 void setup() 
 {
   size(600, 600);
@@ -8,10 +15,11 @@ void setup()
   apples = new ArrayList<Fruit>();
   taco = new ArrayList<Fruit>();
   face = new ArrayList<Fruit>();
-
+  loadhighscore();
 }
 void draw() 
-{
+{      
+    
     facespawn();
     tacospawn();
     if(state == 0){
@@ -19,8 +27,10 @@ void draw()
   } else if(state == 1) {
        setting();
   } else if(state == 2){
-         gameDraw();
+       gameDraw();
   } else if(state == 3) {
+       savehighscore();
+       loadhighscore();
        end();
   }
   

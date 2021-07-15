@@ -6,7 +6,8 @@ void end(){
   rect(xx,yx,wx,hx);
   fill(0);
   textSize(25);
-  text("Game over your score is " + score, 150, 180);
+  text("Game over your score is " + score, 150, 120);
+  text("Your High Score is " + hs2, 150, 180);
   textSize(14);
   text("To restart press this!", 230, 246);
   textSize(24);
