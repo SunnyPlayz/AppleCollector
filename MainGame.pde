@@ -1,5 +1,20 @@
 void gameDraw(){
-  background(0, 255, 255);
+  if (!light) {
+    background(0, 255, 255);
+    fill(0);
+    textSize(16);
+    text("Your Score is: " + score + "!", width -150, 30);
+    text("Life total: " + life + "!", width -150, 50);
+    text("Your Streak: " + streak + "!", width -150, 70);
+  }
+  else {
+    background(0);
+    fill(255);
+    textSize(16);
+    text("Your Score is: " + score + "!", width -150, 30);
+    text("Life total: " + life + "!", width -150, 50);
+    text("Your Streak: " + streak + "!", width -150, 70);
+  }
   currentTime = int(millis() / 1000);
   basket.display(mouseX);
   if(currentTime > prevTime) 
@@ -56,11 +71,6 @@ void gameDraw(){
     face.remove(i);
     }  
   }
-  fill(0);
-  textSize(16);
-  text("Your Score is: " + score + "!", width -150, 30);
-  text("Life total: " + life + "!", width -150, 50);
-  text("Your Streak: " + streak + "!", width -150, 70);
   prevTime = currentTime;
   delay(50);
   if(life == 0){

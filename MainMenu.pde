@@ -1,5 +1,6 @@
 void Menu() 
-{
+{  
+  if (!light){
   background(0, 255, 255);
   textSize(16);
   fill(255);
@@ -16,9 +17,13 @@ void Menu()
   text("Start the Game", 240, 156);
   textSize(24);
   text("End Game!", 240, 346);
+  }
+  else
+    Light();
 }
 
-void Light() {
+void Light() 
+{
   background(0);
   textSize(16);
   fill(255);
