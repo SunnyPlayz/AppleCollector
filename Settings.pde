@@ -1,4 +1,6 @@
 void setting() {
+  if (!light)
+  {
   background(0, 255, 255);
   textSize(16);
   fill(255);
@@ -13,6 +15,9 @@ void setting() {
   textSize(16);
   text("Dark Mode", 180, 156);
   text("Light Mode", 330, 156);  
+  }
+  else
+    lsetting();
 }
 void lsetting() {
   background(0);

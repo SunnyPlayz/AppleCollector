@@ -15,24 +15,12 @@ void draw()
     facespawn();
     tacospawn();
     if(state == 0){
-       if (light)
-           Light();
-       if (!light)
            Menu();
   } else if(state == 1) {
-    if (!light)
        setting();
-    else if (light)
-       lsetting();
   } else if(state == 2){
-       if (light)
-           Lgamedraw();
-       if(!light)
          gameDraw();
   } else if(state == 3) {
-     if (!light)
-       lend();
-     if (light)
        end();
   }
   
